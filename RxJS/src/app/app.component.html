@@ -1,0 +1,17 @@
+<h1>Front-end reativo com RxJS e Angular</h1>
+
+<table *ngIf="bands$ | async as bands">
+  <thead>
+    <tr>
+        <th>Banda</th>
+        <th>Estilo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let band of bands">
+        <td>{{ band.name }}</td>
+        <td>{{ band.style }}</td>
+    </tr>
+  </tbody>
+</table>
+

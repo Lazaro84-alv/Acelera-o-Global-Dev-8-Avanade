@@ -1,0 +1,22 @@
+<div class="planetas">
+  <h1>Planetas</h1>
+
+  <button (click)="carregarPlanetas()">Carregar planetas</button>
+
+  <table>
+    <thead>
+      <th>Nome</th>
+      <th>Posição</th>
+      <th>Diâmetro</th>
+      <th>Tipo</th>
+    </thead> 
+    <tbody>
+      <tr *ngFor="let planeta of planetas; let i = index">
+          <td>{{planeta.posicao}}</td>
+          <td>{{planeta.nome}}</td>
+          <td>{{planeta.diametro}}</td>
+          <td>{{planeta.tipo}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
